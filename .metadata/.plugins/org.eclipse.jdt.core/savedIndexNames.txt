@@ -3,5 +3,4 @@ INDEX VERSION 1.126+/Users/mac/Desktop/TimingMate_android_v1/.metadata/.plugins/
 1020161966.index
 3850618751.index
 2785676187.index
-605072073.index
 1481223089.index
