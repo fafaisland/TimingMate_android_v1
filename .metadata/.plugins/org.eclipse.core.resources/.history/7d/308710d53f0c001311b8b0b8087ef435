@@ -1,0 +1,11 @@
+package com.timingmate.controller;
+
+import android.app.Activity;
+
+public class CreateTaskActivity extends Activity{
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+	}
+}
