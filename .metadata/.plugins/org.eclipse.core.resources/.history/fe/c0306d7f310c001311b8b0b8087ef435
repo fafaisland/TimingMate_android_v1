@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+action_finishToggle_task<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">TimingMate</string>
@@ -9,6 +9,6 @@
     <string name="menu_close">Close the menu</string>
     <string name="action_finishToggle_task">Finish</string>
     <string name="action_delete_task">Delete</string>
-    <string name="action_edit_task">Edit</string>
+    <item name="action_delete_task" type="id" format="integer"/>
 
 </resources>

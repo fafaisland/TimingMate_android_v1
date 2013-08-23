@@ -9,6 +9,5 @@
     <string name="menu_close">Close the menu</string>
     <string name="action_finishToggle_task">Finish</string>
     <string name="action_delete_task">Delete</string>
-    <string name="action_edit_task">Edit</string>
 
 </resources>
