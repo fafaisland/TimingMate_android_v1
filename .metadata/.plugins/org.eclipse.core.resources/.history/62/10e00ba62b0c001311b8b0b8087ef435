@@ -25,14 +25,7 @@ public class TMTask {
 	public boolean equals(Object obj){
 		if (obj instanceof TMTask){
 			TMTask t = (TMTask)obj;
-			if (this.title.equals(t.getTitle()) && 
-				this.list.getTitle().equals(t.getList().getTitle()) && 
-				this.creationTime.equals(t.getCreationTime())){
-				return true;
-			}
-			else{
-				return false;
-			}
+			if (this.title.equals(t.getTitle()) && this.list.getTitle().equals(t.getList().getTitle()) && this.creationTime.equals(t.get) )
 		}else{
 			return true;
 		}

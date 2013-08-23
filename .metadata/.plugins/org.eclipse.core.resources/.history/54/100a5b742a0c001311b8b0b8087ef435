@@ -19,18 +19,6 @@ public class TMListItem {
 		return this.tasks.remove(task);
 	}
 	
-	public boolean equals(Object obj){
-		if (obj instanceof TMListItem){
-			TMListItem l = (TMListItem)obj;
-			if (this.title.equals(l.getTitle()) && this.tasks.equals(l.getTasks())){
-				return true;
-			}else{
-				return false;
-			}
-		}else{
-			return false;
-		}
-	}
 	//setters and getters for title and tasks
 	public String getTitle() {
 		return title;
@@ -47,4 +35,7 @@ public class TMListItem {
 	public void setTasks(ArrayList<TMTask> tasks) {
 		this.tasks = tasks;
 	}
+
+	
+	
 }

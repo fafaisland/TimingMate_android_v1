@@ -1,0 +1,12 @@
+package com.timingmate.model;
+
+import java.util.ArrayList;
+
+public class TMListItem {
+	private String title;
+	private ArrayList<TMTask> tasks;
+	
+	public TMListItem(String title){
+		this.title = title;
+	}
+}

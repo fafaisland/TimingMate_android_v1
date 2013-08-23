@@ -21,23 +21,6 @@ public class TMTask {
 		this.isFinished = false;
 	}
 	
-	@Override
-	public boolean equals(Object obj){
-		if (obj instanceof TMTask){
-			TMTask t = (TMTask)obj;
-			if (this.title.equals(t.getTitle()) && 
-				this.list.getTitle().equals(t.getList().getTitle()) && 
-				this.creationTime.equals(t.getCreationTime())){
-				return true;
-			}
-			else{
-				return false;
-			}
-		}else{
-			return true;
-		}
-	}
-	
 	//setter and getter
 	public String getTitle() {
 		return title;
@@ -55,9 +38,6 @@ public class TMTask {
 		this.list = list;
 	}
 
-	public Date getCreationTime(){
-		return creationTime;
-	}
 	public double getAllowedCompletionTime() {
 		return allowedCompletionTime;
 	}
