@@ -1,0 +1,84 @@
+package com.example.timingmate;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	private ListView drawerList;
+	private DrawerLayout mDrawer;
+	private CustomActionBarDrawerToggle mDrawerToggle;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        _initMenu();
+        
+     // enable ActionBar app icon to behave as action to toggle nav drawer
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+
+        mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerToggle = new CustomActionBarDrawerToggle(this, mDrawer);
+        mDrawer.setDrawerListener(mDrawerToggle);
+    }
+    
+    private void _initMenu(){
+    	String[] fake_list_items = {"a","b","c","d"};
+    	ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,R.layout.drawer_list_item,fake_list_items);
+    	drawerList = (ListView) findViewById(R.id.drawer);
+        if (drawerList != null)
+            drawerList.setAdapter(listAdapter);
+        
+        drawerList.setOnItemClickListener(new DrawerItemClickListener());
+    }
+    private class DrawerItemClickListener implements ListView.OnItemClickListener{
+    	@Override
+    	public void onItemClick(AdapterView parent, View view, int position, long id){
+    		drawerList.setItemChecked(position, true);
+    		setTitle("......");
+    		String text= "menu click... should be implemented";
+            Toast.makeText(MainActivity.this, text , Toast.LENGTH_LONG).show();
+            mDrawer.closeDrawer(drawerList);
+    	}
+    	
+    }
+    
+    private class CustomActionBarDrawerToggle extends ActionBarDrawerToggle {
+
+        public CustomActionBarDrawerToggle(Activity mActivity,DrawerLayout mDrawerLayout){
+              super(
+                    mActivity,               /* host Activity */
+                    mDrawerLayout,           /* DrawerLayout object */
+                    R.drawable.ic_drawer,    /* nav drawer icon to replace 'Up' caret */
+                    R.string.ns_menu_open,   /* "open drawer" description */
+                    R.string.ns_menu_close); /* "close drawer" description */
+        }
+
+
+        /** Called when a drawer has settled in a completely closed state. */
+        @Override
+        public void onDrawerClosed(View view) {
+             getActionBar().setTitle(getString(R.string.ns_menu_close));
+        }
+
+        /** Called when a drawer has settled in a completely open state. */
+        @Override
+        public void onDrawerOpened(View drawerView) {
+             getActionBar().setTitle(getString(R.string.ns_menu_open));
+        }
+  }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

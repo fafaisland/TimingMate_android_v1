@@ -1,7 +1,0 @@
-package com.timingmate;
-
-import android.app.Fragment;
-
-public class PlanetFragment extends Fragment {
-
-}
