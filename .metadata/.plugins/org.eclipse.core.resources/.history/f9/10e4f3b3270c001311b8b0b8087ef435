@@ -50,6 +50,10 @@ public class TMTask {
 		return totalUsedTime;
 	}
 
+	public void setTotalUsedTime(double totalUsedTime) {
+		this.totalUsedTime = totalUsedTime;
+	}
+
 	public boolean isFinished() {
 		return isFinished;
 	}
@@ -57,5 +61,7 @@ public class TMTask {
 	public void setFinished(boolean isFinished) {
 		this.isFinished = isFinished;
 	}
+
+	
 	
 }

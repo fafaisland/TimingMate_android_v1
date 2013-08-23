@@ -1,0 +1,15 @@
+package com.timingmate.model;
+
+import java.util.Date;
+
+public class TMTask {
+	private String title;
+	private TMListItem list;
+	private double allowedCompletionTime;
+	private double totalUsedTime;
+	private Date creationTime;
+	private boolean isFinished;
+	
+	
+	
+}

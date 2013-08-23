@@ -21,7 +21,6 @@ public class TMTask {
 		this.isFinished = false;
 	}
 	
-	//setter and getter
 	public String getTitle() {
 		return title;
 	}
@@ -50,6 +49,10 @@ public class TMTask {
 		return totalUsedTime;
 	}
 
+	public void setTotalUsedTime(double totalUsedTime) {
+		this.totalUsedTime = totalUsedTime;
+	}
+
 	public boolean isFinished() {
 		return isFinished;
 	}
@@ -57,5 +60,7 @@ public class TMTask {
 	public void setFinished(boolean isFinished) {
 		this.isFinished = isFinished;
 	}
+
+	
 	
 }

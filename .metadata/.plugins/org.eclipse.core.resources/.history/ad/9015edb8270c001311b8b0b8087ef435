@@ -57,5 +57,7 @@ public class TMTask {
 	public void setFinished(boolean isFinished) {
 		this.isFinished = isFinished;
 	}
+
+	
 	
 }
