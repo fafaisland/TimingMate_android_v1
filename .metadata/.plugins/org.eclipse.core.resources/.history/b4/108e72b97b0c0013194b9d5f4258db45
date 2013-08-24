@@ -13,7 +13,5 @@
     <string name="action_create_task">Create</string>
     <string name="textfield_task_title">Coding</string>
     <string name="textfield_task_list"/>
-    <string name="btn_createTaskView_cancel">Cancel</string>
-    <string name="btn_createTaskView_save">Save</string>
 
 </resources>

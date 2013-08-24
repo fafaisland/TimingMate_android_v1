@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.example.timingmate.R.string"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
-<fullyQualifiedTypeName name="com.example.timingmate.R.layout"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.support.v4.widget.DrawerLayout"/>
@@ -12,4 +11,6 @@
 <fullyQualifiedTypeName name="android.support.v4.view.GravityCompat"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.example.timingmate.R.id"/>
+<fullyQualifiedTypeName name="com.example.timingmate.R"/>
+<fullyQualifiedTypeName name="com.example.timingmate.R.layout"/>
 </qualifiedTypeNameHistroy>
