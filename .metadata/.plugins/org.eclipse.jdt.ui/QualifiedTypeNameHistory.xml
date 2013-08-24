@@ -10,4 +10,6 @@
 <fullyQualifiedTypeName name="android.view.MenuItem"/>
 <fullyQualifiedTypeName name="android.content.res.Configuration"/>
 <fullyQualifiedTypeName name="android.support.v4.view.GravityCompat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.example.timingmate.R.id"/>
 </qualifiedTypeNameHistroy>

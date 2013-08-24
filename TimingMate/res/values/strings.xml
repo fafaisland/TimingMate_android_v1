@@ -11,5 +11,7 @@
     <string name="action_delete_task">Delete</string>
     <string name="action_edit_task">Edit</string>
     <string name="action_create_task">Create</string>
+    <string name="textfield_task_title">Coding</string>
+    <string name="textfield_task_list"/>
 
 </resources>

@@ -1,8 +1,7 @@
 package com.timingmate.controller;
 
-import com.example.timingmate.R;
-
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -15,6 +14,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.timingmate.R;
 
 public class MainActivity extends Activity {
 	private ListView drawerList;
@@ -92,6 +93,8 @@ public class MainActivity extends Activity {
         // Handle your other action bar items...
     	switch (item.getItemId()){
     		case R.id.action_create_task:
+    			Intent intent = new Intent(MainActivity.this,CreateTaskActivity.class);
+    			startActivity(intent);
     			return true;
     		default:
     			return super.onOptionsItemSelected(item);
