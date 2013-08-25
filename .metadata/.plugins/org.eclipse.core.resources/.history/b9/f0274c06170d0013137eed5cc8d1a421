@@ -74,14 +74,14 @@ public class MainActivity extends Activity {
         /** Called when a drawer has settled in a completely closed state. */
         @Override
         public void onDrawerClosed(View view) {
-             //getActionBar().setTitle(getString(R.string.menu_close));
+             getActionBar().setTitle(getString(R.string.menu_close));
              invalidateOptionsMenu();// creates call to onPrepareOptionsMenu()
         }
 
         /** Called when a drawer has settled in a completely open state. */
         @Override
         public void onDrawerOpened(View drawerView) {
-             //getActionBar().setTitle(getString(R.string.menu_open));   
+             getActionBar().setTitle(getString(R.string.menu_open));   
              invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
         }
     }
@@ -91,9 +91,6 @@ public class MainActivity extends Activity {
         // Pass the event to ActionBarDrawerToggle, if it returns
         // true, then it has handled the app icon touch event
         // Handle your other action bar items...
-    	if (mDrawerToggle.onOptionsItemSelected(item)){
-    		return true;
-    	}
     	switch (item.getItemId()){
     		case R.id.action_create_task:
     			Intent intent = new Intent(MainActivity.this,CreateTaskActivity.class);

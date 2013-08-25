@@ -91,9 +91,6 @@ public class MainActivity extends Activity {
         // Pass the event to ActionBarDrawerToggle, if it returns
         // true, then it has handled the app icon touch event
         // Handle your other action bar items...
-    	if (mDrawerToggle.onOptionsItemSelected(item)){
-    		return true;
-    	}
     	switch (item.getItemId()){
     		case R.id.action_create_task:
     			Intent intent = new Intent(MainActivity.this,CreateTaskActivity.class);
