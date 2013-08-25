@@ -4,16 +4,19 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:ems="10"
+        android:hint="Input list name" />
+
 	<ListView
 	    android:id="@+id/list"
 	    android:layout_width="match_parent"
 	    android:layout_height="327dp" >
 	    android:layout_weight="4"
 	</ListView>	
-	  <EditText
-        android:id="@+id/editText1"
-        android:layout_width="fill_parent"
-        android:layout_height="28dp"
-        android:ems="10"
-        android:hint="Input list name" />
+	
 </LinearLayout>
